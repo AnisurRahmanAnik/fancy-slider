@@ -9,7 +9,9 @@
 .gallery-header {
   display: none;
 }
-
+.margin{
+  margin-top: 25%;
+}
 .slider-item {
   display: none;
 }
