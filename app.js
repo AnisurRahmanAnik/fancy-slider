@@ -15,6 +15,7 @@ const KEY = '15674931-a9d714b6e9d654524df198e00&q';
 
 // show images 
 const showImages = (images) => {
+  resultImages(images.length);
   imagesArea.style.display = 'block';
   gallery.innerHTML = '';
   // show gallery title
@@ -143,3 +144,8 @@ searchBtn.addEventListener('click', function () {
 sliderBtn.addEventListener('click', function () {
   createSlider()
 })
+
+const resultImages = (images) =>{
+  const resultImages = document.getElementById('result');
+   resultImages.innerHTML = ` <h4>Total <span style="color: red">${images}</span> images found!</h4>`
+}
